@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadhif Muhammad Fauzan Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts (Modern Font) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #6a11cb;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            color: #6a11cb;
+            text-transform: uppercase;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .card-title a {
+            color: #6a11cb;
+            font-weight: 600;
+        }
+
+        .card-title a:hover {
+            text-decoration: underline;
+        }
+
+        .project-details {
+            margin-bottom: 1rem;
+        }
+
+        .project-description {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-top: 1rem;
+            color: #666;
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .contact-info {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .contact-info i {
+            color: #6a11cb;
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+
+        .contact-info p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .stats img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        /* Skills Section Styling */
+        .skills {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .skills h5 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills ul li {
+            margin-bottom: 0.8rem;
+            font-size: 1rem;
+        }
+
+        .skills ul li i {
+            color: #6a11cb;
+            margin-right: 8px;
+        }
+
+        /* Mobile-friendly tweaks */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+            }
+
+            .skills {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skills h5 {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🌟 Nadhif Muhammad Fauzan</h1>
+        <p>Backend Developer | Software Engineer | Python Enthusiast</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+
+        <!-- About Me -->
+        <section class="text-center mb-5">
+            <img src="assets/images/profile.png" alt="Profile Picture" class="profile-pic mb-4">
+            <h2 class="section-title">📸 About Me</h2>
+            <p class="lead">Hello! I'm <strong>Nadhif Muhammad Fauzan</strong>, a Backend Developer based in Jakarta. I specialize in Python-based data processing, and I’m always eager to learn and grow. When I'm not coding, you can find me traveling or watching Anime.</p>
+        </section>
+
+        <!-- Projects -->
+        <section>
+            <h2 class="section-title">📂 Projects</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="https://gitlab.com/nmfauzan/dmsbackend">E-Faskon OCR Database</a></h5>
+                            <p class="card-text">E-Faskon OCR Database for Indonesian National Police.</p>
+                            <div class="project-details">
+                                <h6><i class="fas fa-cogs"></i> Tech Stack</h6>
+                                <ul>
+                                    <li><i class="fas fa-gear me-2" style="color: #6a11cb;"></i>Python</li>
+                                    <li><i class="fas fa-gear me-2" style="color: #6a11cb;"></i>Guillotina</li>
+                                    <li><i class="fas fa-gear me-2" style="color: #6a11cb;"></i>On-Premise Linux Server</li>
+                                </ul>
+                                <h6><i class="fas fa-list-ul"></i> Features</h6>
+                                <ul>
+                                    <li><i class="fas fa-check me-2" style="color: #6a11cb;"></i>PDF document storage</li>
+                                    <li><i class="fas fa-check me-2" style="color: #6a11cb;"></i>Automatic document OCR using on-premise API</li>
+                                    <li><i class="fas fa-check me-2" style="color: #6a11cb;"></i>PDF and content searching using OCR results</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="project-description">The backend side of E-Faskon is built using Python, powered by the Guillotina framework, and utilizes PostgreSQL for structured data management.</p>
+                </div>
+                <!-- Additional Projects -->
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills mb-5">
+            <div class="col-md-4">
+                <h5 class="text-center mb-3">Programming Languages</h5>
+                <ul>
+                    <li><i class="fas fa-code"></i>Python</li>
+                    <li><i class="fas fa-code"></i>C++</li>
+                    <li><i class="fas fa-code"></i>JavaScript</li>
+                    <li><i class="fas fa-code"></i>Go</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="text-center mb-3">Frameworks & Libraries</h5>
+                <ul>
+                    <li><i class="fas fa-layer-group"></i>Guillotina</li>
+                    <li><i class="fas fa-layer-group"></i>Flask</li>
+                    <li><i class="fas fa-layer-group"></i>Django</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="text-center mb-3">Tools & Platforms</h5>
+                <ul>
+                    <li><i class="fas fa-tools"></i>Git</li>
+                    <li><i class="fas fa-tools"></i>Linux</li>
+                    <li><i class="fas fa-tools"></i>Jupyter Notebook</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section>
+            <h2 class="section-title">📧 Contact Me</h2>
+            <div class="contact-info">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="fas fa-binoculars"></i>
+                    <p><strong>Currently working on:</strong> Emtres Indonesia</p>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                    <i class="fas fa-seedling"></i>
+                    <p><strong>Learning:</strong> Google Cloud Platform</p>
+                </div>
+                <div class="d-flex flex-column">
+                    <a href="https://www.linkedin.com/in/nmfauzan" class="d-flex align-items-center mb-2">
+                        <i class="fab fa-linkedin me-2" style="color: #6a11cb;"></i> LinkedIn Profile
+                    </a>
+                    <a href="mailto:nadhif.m.fauzan@example.com" class="d-flex align-items-center">
+                        <i class="fas fa-envelope me-2" style="color: #6a11cb;"></i> Email
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Nadhif Muhammad Fauzan</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
